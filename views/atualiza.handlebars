@@ -1,0 +1,20 @@
+<h1>Atualização de Produtos</h1>
+<br>
+<form action="/atualizar" method="post">
+    <label for="">Nome do produto:</label>
+    <input type="text" name="nome"><br>
+    <label for="">Quantidade do produto:</label>
+    <input type="text" name="qtde_produto"><br>
+    <label for="">Preco do produto:</label>
+    <input type="text" name="preco_prod"><br><br>
+    <button type="submit">Atualiza</button>
+</form>
+<br>
+{{#if msg}}
+    <p>{{msg}}</p>
+{{/if}}
+{{#if msg3}}
+    <p>{{msg3}}</p>
+{{else}}
+    <p>{{msg2}}</p>
+{{/if}}

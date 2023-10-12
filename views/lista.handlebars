@@ -1,0 +1,22 @@
+<h1>Lista de Produtos</h1>
+<hr>
+
+<table>
+    <thead>
+        <th>Código</th>
+        <th>Nome</th>
+        <th>Quantidade</th>
+        <th>Produto</th>
+    </thead>
+{{#each valores}}
+    <tbody>
+        <tr>
+            <td>{{this.id}}</td>
+            <td>{{this.nome}}</td>
+            <td>{{this.qtde_produto}}</td>
+            <td>{{this.preco_prod}}</td>
+        </tr>
+    </tbody>
+{{/each}}
+</table>
+<hr>
